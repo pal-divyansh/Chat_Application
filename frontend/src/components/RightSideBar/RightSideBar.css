@@ -1,0 +1,77 @@
+.profile-section {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e0e7ff;
+    margin-bottom: 1rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.user-profile:hover {
+    background-color: #f0f4ff;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.profile-info p {
+    margin: 0.25rem 0 0;
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.profile-icon {
+    color: #718096;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.user-profile:hover .profile-icon {
+    color: #4a5568;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: auto;
+    background: transparent;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    color: #e53e3e;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.logout-button:hover {
+    background: #fff5f5;
+    border-color: #fed7d7;
+}
+
+/* Add this if you want to make the profile section sticky */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+}
