@@ -1,0 +1,27 @@
+.chat {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 1800px;
+    height: 95vh;
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px rgba(30,40,120,0.18);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    overflow: hidden;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+/* Ensure the chat box takes full height */
+.chat-container > * {
+    height: 100%;
+    overflow-y: auto;
+}
